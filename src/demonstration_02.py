@@ -10,4 +10,11 @@ Examples:
 """
 def convert(minutes):
     # Your code here
+    conv = minutes * 60
+    return conv
 
+
+print("%d seconds" % (convert(1)))
+print("%d seconds" % (convert(2)))
+print("%d seconds" % (convert(3)))
+print("%d seconds" % (convert(5)))
