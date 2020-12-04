@@ -15,4 +15,13 @@ Notes:
 """
 def get_discounts(nums, percentage):
     # Your code here
+    discount = int(percentage[ :-1]) / 100
+    lst = []
+    for num in nums:
+        lst.append(num * discount)
+
+    return lst
+print(get_discounts([2, 4, 6, 11], "50%"))
+print(get_discounts([10, 20, 40, 80], "75%"))
+print(get_discounts([100], "45%"))
 
